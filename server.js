@@ -1,0 +1,15 @@
+const FAVORITE_INSTRUCTION = process.env.Name;
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function main() {
+  while(true) {
+    console.log("${FAVOURITE_INSTRUCTOR}rocks!");
+    await sleep(5000);
+  }
+}
+
+main();
